@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uttarakhand Tourism - Dev Bhoomi</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="assets/logo.png"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets\logo.jpeg" alt="Logo"/> Uttarakhand Tourism</a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="adventure.html">Adventure</a></li>
+        <li><a href="spiritual.html">Spiritual</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="position:relative;height:90vh;overflow:hidden;">
+    <div class="hero-slider">
+      <div class="slide active">
+        <img src="assets/hero1.jpg" alt="Uttarakhand Mountains"/>
+        <div class="slide-content">
+          <h1>Welcome to Uttarakhand</h1>
+          <p>Land of Gods - Where Spirituality Meets Adventure</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/hero2.jpg" alt="Spiritual Uttarakhand"/>
+        <div class="slide-content">
+          <h1>Spiritual Journey</h1>
+          <p>Discover Ancient Temples and Sacred Sites</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/hero3.jpg" alt="Adventure in Uttarakhand"/>
+        <div class="slide-content">
+          <h1>Adventure Awaits</h1>
+          <p>Thrilling Experiences in the Himalayas</p>
+        </div>
+      </div>
+    </div>
+    <button class="slider-btn prev" id="prevBtn"><</button>
+    <button class="slider-btn next" id="nextBtn">></button>
+  </section>
+
+  <main style="max-width:1200px;margin:0 auto;padding:2rem;">
+    <section class="highlights animate-fade-in">
+      <h2>Experience Uttarakhand</h2>
+      <div class="card-grid">
+        <div class="feature-card animate-slide-up">
+          <img src="assets/spiritual-thumb.jpg" alt="Spiritual Tourism"/>
+          <div class="card-content">
+            <h3>Spiritual Tourism</h3>
+            <p>Explore the sacred Char Dham Yatra and ancient temples</p>
+            <a href="spiritual.html" class="btn">Discover More</a>
+          </div>
+        </div>
+
+        <div class="feature-card animate-slide-up">
+          <img src="assets/adventure-thumb.jpg" alt="Adventure Tourism"/>
+          <div class="card-content">
+            <h3>Adventure Tourism</h3>
+            <p>Experience thrilling activities in the mountains</p>
+            <a href="adventure.html" class="btn">Explore Activities</a>
+          </div>
+        </div>
+
+        <div class="feature-card animate-slide-up">
+          <img src="assets/wildlife-thumb.jpg" alt="Wildlife Tourism"/>
+          <div class="card-content">
+            <h3>Wildlife Tourism</h3>
+            <p>Discover diverse flora and fauna in national parks</p>
+            <a href="wildlife.html" class="btn">View Wildlife</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-destinations" style="margin-top:4rem;">
+      <h2>Popular Destinations</h2>
+      <div class="destination-grid">
+        <div class="destination-card animate-slide-up">
+          <img src="assets/rishikesh-feat.jpg" alt="Rishikesh"/>
+          <div class="card-content">
+            <h3>Rishikesh</h3>
+            <p>World Capital of Yoga</p>
+            <a href="destinations.html#rishikesh" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="destination-card animate-slide-up">
+          <img src="assets/nainital-feat.jpg" alt="Nainital"/>
+          <div class="card-content">
+            <h3>Nainital</h3>
+            <p>Lake Paradise</p>
+            <a href="destinations.html#nainital" class="btn">Learn More</a>
+          </div>
+        </div>
+
+        <div class="destination-card animate-slide-up">
+          <img src="assets/kedarnath-feat.jpg" alt="Kedarnath"/>
+          <div class="card-content">
+            <h3>Kedarnath</h3>
+            <p>Sacred Temple Town</p>
+            <a href="destinations.html#kedarnath" class="btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seasonal-highlights" style="margin-top:4rem;">
+      <h2>Seasonal Highlights</h2>
+      <div class="season-grid">
+        <div class="season-card summer">
+          <h3>Summer (Mar-Jun)</h3>
+          <ul>
+            <li>Hill Station Retreats</li>
+            <li>Adventure Sports</li>
+            <li>Char Dham Yatra</li>
+          </ul>
+        </div>
+
+        <div class="season-card monsoon">
+          <h3>Monsoon (Jul-Sep)</h3>
+          <ul>
+            <li>Valley of Flowers</li>
+            <li>Waterfalls</li>
+            <li>Green Landscapes</li>
+          </ul>
+        </div>
+
+        <div class="season-card autumn">
+          <h3>Autumn (Oct-Nov)</h3>
+          <ul>
+            <li>Wildlife Safaris</li>
+            <li>Photography Tours</li>
+            <li>Cultural Festivals</li>
+          </ul>
+        </div>
+
+        <div class="season-card winter">
+          <h3>Winter (Dec-Feb)</h3>
+          <ul>
+            <li>Skiing in Auli</li>
+            <li>Snow Views</li>
+            <li>Winter Sports</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-info" style="margin-top:4rem;padding:2rem;background:#f5f5f5;border-radius:12px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;">
+        <div>
+          <h3>🗺️ Getting Here</h3>
+          <ul>
+            <li>Nearest Airports: Dehradun, Pantnagar</li>
+            <li>Well-connected Railway Network</li>
+            <li>Extensive Road Connectivity</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>🎯 Must Visit</h3>
+          <ul>
+            <li>Char Dham Temples</li>
+            <li>Jim Corbett National Park</li>
+            <li>Valley of Flowers</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>📞 Helpline</h3>
+          <ul>
+            <li>Tourism: 1364</li>
+            <li>Emergency: 112</li>
+            <li>Medical: 108</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" style="text-align:center;margin:4rem 0;padding:3rem;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('assets/cta-bg.jpg');background-size:cover;color:white;border-radius:12px;">
+      <h2>Plan Your Journey</h2>
+      <p style="margin:1.5rem 0;">
+        Let us help you create unforgettable memories in Uttarakhand
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;">
+        <a href="contact.html" class="btn">Contact Us</a>
+        <a href="tips.html" class="btn">Travel Guide</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">
+            <img src="assets/facebook.png" alt="Facebook"/>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img src="assets/twitter.png" alt="Twitter"/>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img src="assets/instagram.jpeg" alt="Instagram"/>
+          </a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>Email: info@uttarakhandtourism.gov.in</li>
+          <li>Phone: 1364 (Toll Free)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Uttarakhand Tourism</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

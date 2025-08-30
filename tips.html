@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Tips | Uttarakhand Tourism</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .tips-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .tips-list {
+      list-style: none;
+      padding: 0;
+    }
+    .tips-list li {
+      margin: 1rem 0;
+      padding-left: 2rem;
+      position: relative;
+    }
+    .tips-list li::before {
+      position: absolute;
+      left: 0;
+      font-size: 1.2rem;
+    }
+    .essential-tip::before {
+      content: "⭐";
+    }
+    .safety-tip::before {
+      content: "🛡️";
+    }
+    .cultural-tip::before {
+      content: "🙏";
+    }
+    .season-tip::before {
+      content: "🌤️";
+    }
+    .packing-tip::before {
+      content: "🎒";
+    }
+    .transport-tip::before {
+      content: "🚗";
+    }
+    .food-tip::before {
+      content: "🍽️";
+    }
+    .accommodation-tip::before {
+      content: "🏠";
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/logo.jpeg" alt="Logo"/> Uttarakhand Tourism</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="adventure.html">Adventure</a></li>
+        <li><a href="spiritual.html">Spiritual</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="tips.html" class="active">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="position:relative;height:70vh;overflow:hidden;">
+    <img src="assets/tips-hero.jpg" alt="Uttarakhand Travel" style="width:100%;height:100%;object-fit:cover;"/>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:2rem;">
+      <h1 style="font-size:3.5rem;margin-bottom:1rem;">Essential Travel Tips</h1>
+      <p style="font-size:1.25rem;max-width:800px;">Plan your Uttarakhand journey with our comprehensive travel guide</p>
+    </div>
+  </section>
+
+  <main style="max-width:1200px;margin:0 auto;padding:2rem;">
+    <section class="tips-grid">
+      <div class="tips-card animate-slide-up">
+        <h2>Essential Tips</h2>
+        <ul class="tips-list">
+          <li class="essential-tip">Book accommodations in advance during peak season (May-June, December-January)</li>
+          <li class="essential-tip">Carry adequate cash as ATMs might be scarce in remote areas</li>
+          <li class="essential-tip">Keep emergency contact numbers handy</li>
+          <li class="essential-tip">Download offline maps for navigation in hill areas</li>
+          <li class="essential-tip">Check road conditions and weather forecasts before travel</li>
+        </ul>
+      </div>
+
+      <div class="tips-card animate-slide-up">
+        <h2>Safety Guidelines</h2>
+        <ul class="tips-list">
+          <li class="safety-tip">Follow altitude sickness prevention measures in high-altitude areas</li>
+          <li class="safety-tip">Stay on marked trails during treks</li>
+          <li class="safety-tip">Carry basic first-aid kit and necessary medications</li>
+          <li class="safety-tip">Register yourself at local police stations for high-altitude treks</li>
+          <li class="safety-tip">Avoid traveling during monsoon season in landslide-prone areas</li>
+        </ul>
+      </div>
+
+      <div class="tips-card animate-slide-up">
+        <h2>Cultural Sensitivity</h2>
+        <ul class="tips-list">
+          <li class="cultural-tip">Dress modestly, especially at religious sites</li>
+          <li class="cultural-tip">Remove shoes before entering temples</li>
+          <li class="cultural-tip">Ask permission before photographing locals</li>
+          <li class="cultural-tip">Respect local customs and traditions</li>
+          <li class="cultural-tip">Learn basic Hindi/local greetings</li>
+        </ul>
+      </div>
+
+      <div class="tips-card animate-slide-up">
+        <h2>Seasonal Travel Guide</h2>
+        <ul class="tips-list">
+          <li class="season-tip">Summer (March-June): Perfect for hill stations</li>
+          <li class="season-tip">Monsoon (July-September): Best for Valley of Flowers</li>
+          <li class="season-tip">Post-Monsoon (October-November): Ideal for wildlife</li>
+          <li class="season-tip">Winter (December-February): Snow activities and views</li>
+          <li class="season-tip">Check temple opening dates for Char Dham Yatra</li>
+        </ul>
+      </div>
+
+      <div class="tips-card animate-slide-up">
+        <h2>Packing Essentials</h2>
+        <ul class="tips-list">
+          <li class="packing-tip">Warm clothes (layering is key)</li>
+          <li class="packing-tip">Comfortable walking shoes</li>
+          <li class="packing-tip">Rain gear and umbrella</li>
+          <li class="packing-tip">Sun protection (hat, sunscreen, sunglasses)</li>
+          <li class="packing-tip">Power bank and torch</li>
+          <li class="packing-tip">Water bottle and snacks</li>
+        </ul>
+      </div>
+
+      <div class="tips-card animate-slide-up">
+        <h2>Transportation Tips</h2>
+        <ul class="tips-list">
+          <li class="transport-tip">Book return tickets in advance during peak season</li>
+          <li class="transport-tip">Use shared taxis for cost-effective travel</li>
+          <li class="transport-tip">Consider hiring a driver for multiple destinations</li>
+          <li class="transport-tip">Check bus schedules for remote areas</li>
+          <li class="transport-tip">Keep buffer days for weather-related delays</li>
+        </ul>
+      </div>
+
+      <div class="tips-card animate-slide-up">
+        <h2>Food & Water Safety</h2>
+        <ul class="tips-list">
+          <li class="food-tip">Drink only bottled or filtered water</li>
+          <li class="food-tip">Try local cuisine but from hygienic places</li>
+          <li class="food-tip">Carry energy bars for treks</li>
+          <li class="food-tip">Avoid raw foods in remote areas</li>
+          <li class="food-tip">Check restaurant reviews when possible</li>
+        </ul>
+      </div>
+
+      <div class="tips-card animate-slide-up">
+        <h2>Accommodation Guide</h2>
+        <ul class="tips-list">
+          <li class="accommodation-tip">Mix stays between hotels and homestays</li>
+          <li class="accommodation-tip">Book rooms with heating in winter</li>
+          <li class="accommodation-tip">Check for power backup in remote areas</li>
+          <li class="accommodation-tip">Consider GMVN rest houses for budget stays</li>
+          <li class="accommodation-tip">Read recent reviews before booking</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="destination-specific-tips" style="margin-top:4rem;">
+      <h2>Destination-Specific Tips</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <div class="tips-card">
+          <h3>Char Dham Yatra</h3>
+          <ul class="tips-list">
+            <li class="essential-tip">Get medical fitness certificate</li>
+            <li class="essential-tip">Book helicopter services in advance</li>
+            <li class="essential-tip">Check temple opening dates</li>
+            <li class="essential-tip">Carry warm clothes and rain protection</li>
+          </ul>
+        </div>
+
+        <div class="tips-card">
+          <h3>Wildlife Safari</h3>
+          <ul class="tips-list">
+            <li class="essential-tip">Book safaris 3 months in advance</li>
+            <li class="essential-tip">Carry binoculars and camera</li>
+            <li class="essential-tip">Wear natural colored clothing</li>
+            <li class="essential-tip">Follow park guidelines strictly</li>
+          </ul>
+        </div>
+
+        <div class="tips-card">
+          <h3>Trekking</h3>
+          <ul class="tips-list">
+            <li class="essential-tip">Use certified trek operators</li>
+            <li class="essential-tip">Acclimatize properly</li>
+            <li class="essential-tip">Carry appropriate gear</li>
+            <li class="essential-tip">Check weather conditions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="emergency-info" style="margin:4rem 0;padding:2rem;background:#ffe0e0;border-radius:12px;">
+      <h2>Emergency Information</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <div>
+          <h3>🚨 Emergency Numbers</h3>
+          <ul>
+            <li>Police: 100</li>
+            <li>Ambulance: 108</li>
+            <li>Tourist Helpline: 1364</li>
+            <li>Mountain Rescue: 011-24363260</li>
+          </ul>
+        </div>
+        <div>
+          <h3>🏥 Major Hospitals</h3>
+          <ul>
+            <li>Dehradun: Max Hospital</li>
+            <li>Rishikesh: AIIMS</li>
+            <li>Nainital: BD Pandey Hospital</li>
+            <li>Haridwar: Mela Hospital</li>
+          </ul>
+        </div>
+        <div>
+          <h3>👮 Tourist Police Stations</h3>
+          <ul>
+            <li>Dehradun: 0135-2716201</li>
+            <li>Mussoorie: 0135-2632083</li>
+            <li>Nainital: 05942-235444</li>
+            <li>Haridwar: 01334-265771</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="travel-resources" style="margin-top:4rem;">
+      <h2>Useful Resources</h2>
+      <div class="tips-card">
+        <h3>Important Links</h3>
+        <ul class="tips-list">
+          <li class="essential-tip">Uttarakhand Tourism Website</li>
+          <li class="essential-tip">Weather Updates Portal</li>
+          <li class="essential-tip">GMVN Booking Portal</li>
+          <li class="essential-tip">Forest Department Website</li>
+          <li class="essential-tip">Local Transport Booking Sites</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-section" style="text-align:center;margin:4rem 0;padding:3rem;background:#e3f2fd;border-radius:8px;">
+      <h2>Need More Help?</h2>
+      <p style="margin:1.5rem 0;">
+        Our travel experts are here to help you plan your perfect Uttarakhand trip.
+      </p>
+      <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uttarakhand Tourism</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

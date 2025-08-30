@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinations | Uttarakhand Tourism</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .destination-category {
+      margin: 4rem 0;
+    }
+    .destination-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .destination-card:hover {
+      transform: translateY(-5px);
+    }
+    .destination-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .features-list li::before {
+      content: "•";
+      color: #4CAF50;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+    .season-tag {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      margin: 0.3rem;
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/logo.jpeg" alt="Logo"/> Uttarakhand Tourism</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="adventure.html">Adventure</a></li>
+        <li><a href="spiritual.html">Spiritual</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="position:relative;height:70vh;overflow:hidden;">
+    <img src="assets/uttarakhand-hero.jpg" alt="Uttarakhand Landscape" style="width:100%;height:100%;object-fit:cover;"/>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:2rem;">
+      <h1 style="font-size:3.5rem;margin-bottom:1rem;">Destinations in Uttarakhand</h1>
+      <p style="font-size:1.25rem;max-width:800px;">Explore the diverse landscapes from snow-capped peaks to spiritual retreats</p>
+    </div>
+  </section>
+
+  <main style="max-width:1200px;margin:0 auto;padding:2rem;">
+    <section class="destination-category">
+      <h2>Popular Hill Stations</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="destination-card animate-slide-up">
+          <img src="assets/mussoorie.jpg" alt="Mussoorie"/>
+          <div class="card-content">
+            <h3>Mussoorie</h3>
+            <p>The Queen of Hills offers colonial charm and panoramic views of the Doon Valley.</p>
+            <h4>Key Attractions</h4>
+            <ul class="features-list">
+              <li>Kempty Falls</li>
+              <li>Mall Road shopping</li>
+              <li>Lal Tibba viewpoint</li>
+              <li>Gun Hill cable car</li>
+              <li>Company Garden</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: March-June</span>
+              <span class="season-tag">Dec-Feb (Snow)</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/nainital.jpg" alt="Nainital"/>
+          <div class="card-content">
+            <h3>Nainital</h3>
+            <p>A picturesque lake city surrounded by seven hills, perfect for a relaxing holiday.</p>
+            <h4>Key Attractions</h4>
+            <ul class="features-list">
+              <li>Naini Lake boating</li>
+              <li>Snow View Point</li>
+              <li>Mall Road</li>
+              <li>Tiffin Top</li>
+              <li>High Altitude Zoo</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: March-June</span>
+              <span class="season-tag">Sept-Nov</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/ranikhet.jpg" alt="Ranikhet"/>
+          <div class="card-content">
+            <h3>Ranikhet</h3>
+            <p>A cantonment town known for its peaceful environment and golf course.</p>
+            <h4>Key Attractions</h4>
+            <ul class="features-list">
+              <li>Chaubatia Gardens</li>
+              <li>Upat Golf Course</li>
+              <li>Jhula Devi Temple</li>
+              <li>Majkhali</li>
+              <li>Sunset Point</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: April-June</span>
+              <span class="season-tag">Sept-Nov</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="destination-category">
+      <h2>Spiritual Destinations</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="destination-card animate-slide-up">
+          <img src="assets/kedarnath.jpg" alt="Kedarnath"/>
+          <div class="card-content">
+            <h3>Kedarnath</h3>
+            <p>One of the holiest Hindu temples dedicated to Lord Shiva, set against majestic peaks.</p>
+            <h4>Sacred Sites</h4>
+            <ul class="features-list">
+              <li>Kedarnath Temple</li>
+              <li>Bhairav Temple</li>
+              <li>Shankaracharya Samadhi</li>
+              <li>Gandhi Sarovar</li>
+              <li>Chorabari Tal</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: May-June</span>
+              <span class="season-tag">Sept-Oct</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/rishikesh.jpg" alt="Rishikesh"/>
+          <div class="card-content">
+            <h3>Rishikesh</h3>
+            <p>World Capital of Yoga, perfect for spiritual seekers and adventure enthusiasts.</p>
+            <h4>Highlights</h4>
+            <ul class="features-list">
+              <li>Laxman Jhula</li>
+              <li>Ram Jhula</li>
+              <li>Parmarth Niketan</li>
+              <li>Beatles Ashram</li>
+              <li>Evening Ganga Aarti</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Feb-May</span>
+              <span class="season-tag">Sept-Nov</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/haridwar.jpg" alt="Haridwar"/>
+          <div class="card-content">
+            <h3>Haridwar</h3>
+            <p>Ancient holy city where the Ganges descends to the plains.</p>
+            <h4>Sacred Sites</h4>
+            <ul class="features-list">
+              <li>Har Ki Pauri</li>
+              <li>Mansa Devi Temple</li>
+              <li>Chandi Devi Temple</li>
+              <li>Maya Devi Temple</li>
+              <li>Daksha Mahadev Temple</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Oct-Mar</span>
+              <span class="season-tag">During Festivals</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="destination-category">
+      <h2>Adventure Destinations</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="destination-card animate-slide-up">
+          <img src="assets/auli.jpg" alt="Auli"/>
+          <div class="card-content">
+            <h3>Auli</h3>
+            <p>India's premier ski resort with breathtaking views of Nanda Devi.</p>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>Skiing</li>
+              <li>Gondola Ride</li>
+              <li>Trekking</li>
+              <li>Camping</li>
+              <li>Photography</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Skiing: Dec-Mar</span>
+              <span class="season-tag">Summer: May-Nov</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/valley.jpg" alt="Valley of Flowers"/>
+          <div class="card-content">
+            <h3>Valley of Flowers</h3>
+            <p>UNESCO World Heritage Site famous for its meadows of endemic alpine flowers.</p>
+            <h4>Highlights</h4>
+            <ul class="features-list">
+              <li>Endemic Flowers</li>
+              <li>Hemkund Sahib Trek</li>
+              <li>Wildlife Spotting</li>
+              <li>Photography</li>
+              <li>Camping</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Jul-Sept</span>
+              <span class="season-tag">Peak Bloom: Aug</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/chopta.jpg" alt="Chopta"/>
+          <div class="card-content">
+            <h3>Chopta</h3>
+            <p>Mini Switzerland of India, base for the famous Tungnath temple trek.</p>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>Tungnath Trek</li>
+              <li>Chandrashila Peak</li>
+              <li>Camping</li>
+              <li>Bird Watching</li>
+              <li>Snow Activities</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Summer: Apr-Jun</span>
+              <span class="season-tag">Winter: Oct-Mar</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="destination-category">
+      <h2>Hidden Gems</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="destination-card animate-slide-up">
+          <img src="assets/munsiyari.jpg" alt="Munsiyari"/>
+          <div class="card-content">
+            <h3>Munsiyari</h3>
+            <p>Little Kashmir of Uttarakhand with stunning views of Panchachuli peaks.</p>
+            <h4>Attractions</h4>
+            <ul class="features-list">
+              <li>Panchachuli View</li>
+              <li>Tribal Heritage Museum</li>
+              <li>Khaliya Top Trek</li>
+              <li>Birthi Falls</li>
+              <li>Local Handicrafts</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Mar-Jun</span>
+              <span class="season-tag">Sept-Nov</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/chakrata.jpg" alt="Chakrata"/>
+          <div class="card-content">
+            <h3>Chakrata</h3>
+            <p>A serene cantonment town known for its pristine beauty and waterfalls.</p>
+            <h4>Attractions</h4>
+            <ul class="features-list">
+              <li>Tiger Falls</li>
+              <li>Chilmiri Neck</li>
+              <li>Deoban</li>
+              <li>Budher Caves</li>
+              <li>Kanasar Forest</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Mar-Jun</span>
+              <span class="season-tag">Oct-Feb</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+
+        <article class="destination-card animate-slide-up">
+          <img src="assets/almora.jpg" alt="Almora"/>
+          <div class="card-content">
+            <h3>Almora</h3>
+            <p>Cultural capital of Kumaon with rich heritage and stunning mountain views.</p>
+            <h4>Attractions</h4>
+            <ul class="features-list">
+              <li>Bright End Corner</li>
+              <li>Kasar Devi Temple</li>
+              <li>Zero Point</li>
+              <li>Deer Park</li>
+              <li>Local Markets</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Mar-Jun</span>
+              <span class="season-tag">Sept-Nov</span>
+            </div>
+            <a href="#" class="btn" style="display:inline-block;margin-top:1rem;">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="planning-guide" style="margin:4rem 0;padding:2rem;background:#f5f5f5;border-radius:12px;">
+      <h2>Travel Planning Guide</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <div>
+          <h3>🗓️ Best Time to Visit</h3>
+          <ul>
+            <li>Summer (Mar-Jun): Hill stations</li>
+            <li>Monsoon (Jul-Sep): Valley of Flowers</li>
+            <li>Winter (Oct-Feb): Snow activities</li>
+          </ul>
+        </div>
+        <div>
+          <h3>✈️ How to Reach</h3>
+          <ul>
+            <li>Nearest Airports: Dehradun, Pantnagar</li>
+            <li>Railway: Kathgodam, Dehradun</li>
+            <li>Road: Well-connected highway network</li>
+          </ul>
+        </div>
+        <div>
+          <h3>🚗 Getting Around</h3>
+          <ul>
+            <li>State transport buses</li>
+            <li>Shared taxis</li>
+            <li>Private car rentals</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uttarakhand Tourism</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

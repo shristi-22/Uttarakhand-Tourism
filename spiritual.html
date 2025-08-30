@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spiritual Tourism | Uttarakhand Tourism</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .spiritual-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .spiritual-card:hover {
+      transform: translateY(-5px);
+    }
+    .spiritual-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .features-list li::before {
+      content: "🕉️";
+      position: absolute;
+      left: 0;
+    }
+    .season-tag {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      margin: 0.3rem;
+      background: #fff3e0;
+      color: #e65100;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/logo.jpeg+" alt="Logo"/> Uttarakhand Tourism</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="adventure.html">Adventure</a></li>
+        <li><a href="spiritual.html" class="active">Spiritual</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="position:relative;height:70vh;overflow:hidden;">
+    <img src="assets/spiritual-hero.jpg" alt="Spiritual Uttarakhand" style="width:100%;height:100%;object-fit:cover;"/>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:2rem;">
+      <h1 style="font-size:3.5rem;margin-bottom:1rem;">Spiritual Journey</h1>
+      <p style="font-size:1.25rem;max-width:800px;">Explore the divine realm of temples, ashrams, and sacred sites in the Land of Gods</p>
+    </div>
+  </section>
+
+  <main style="max-width:1200px;margin:0 auto;padding:2rem;">
+    <section class="char-dham">
+      <h2>Char Dham Yatra</h2>
+      <p style="font-size:1.1rem;margin:1rem 0;">The most sacred pilgrimage circuit in the Himalayas, comprising four ancient temples.</p>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:2rem;">
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/yamunotri.jpg" alt="Yamunotri"/>
+          <div class="card-content">
+            <h3>Yamunotri</h3>
+            <p>Source of River Yamuna and seat of Goddess Yamuna</p>
+            <h4>Sacred Sites</h4>
+            <ul class="features-list">
+              <li>Yamunotri Temple</li>
+              <li>Divya Shila</li>
+              <li>Surya Kund</li>
+              <li>Thermal Springs</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">May-June & Sept-Nov</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/gangotri.jpg" alt="Gangotri"/>
+          <div class="card-content">
+            <h3>Gangotri</h3>
+            <p>Origin of River Ganga and temple of Goddess Ganga</p>
+            <h4>Sacred Sites</h4>
+            <ul class="features-list">
+              <li>Gangotri Temple</li>
+              <li>Bhagirath Shila</li>
+              <li>Pandava Gufa</li>
+              <li>Gaumukh Glacier</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">May-June & Sept-Nov</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/kedarnath.jpg" alt="Kedarnath"/>
+          <div class="card-content">
+            <h3>Kedarnath</h3>
+            <p>Ancient shrine dedicated to Lord Shiva</p>
+            <h4>Sacred Sites</h4>
+            <ul class="features-list">
+              <li>Kedarnath Temple</li>
+              <li>Bhairav Temple</li>
+              <li>Adi Shankaracharya Samadhi</li>
+              <li>Gandhi Sarovar</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">May-June & Sept-Nov</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/badrinath.jpg" alt="Badrinath"/>
+          <div class="card-content">
+            <h3>Badrinath</h3>
+            <p>Sacred temple of Lord Vishnu</p>
+            <h4>Sacred Sites</h4>
+            <ul class="features-list">
+              <li>Badrinath Temple</li>
+              <li>Tapt Kund</li>
+              <li>Neelkanth Peak</li>
+              <li>Vasudhara Falls</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">May-June & Sept-Nov</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="spiritual-cities" style="margin-top:4rem;">
+      <h2>Sacred Cities</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/haridwar-aarti.jpg" alt="Haridwar"/>
+          <div class="card-content">
+            <h3>Haridwar</h3>
+            <p>Gateway to the Gods and sacred city on the Ganges</p>
+            <h4>Spiritual Experiences</h4>
+            <ul class="features-list">
+              <li>Ganga Aarti at Har Ki Pauri</li>
+              <li>Mansa Devi Temple</li>
+              <li>Chandi Devi Temple</li>
+              <li>Holy Dips in Ganges</li>
+              <li>Ashrams and Meditation</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Year Round</span>
+              <span class="season-tag">Best: Oct-Mar</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/rishikesh-ganga.jpg" alt="Rishikesh"/>
+          <div class="card-content">
+            <h3>Rishikesh</h3>
+            <p>World Capital of Yoga and Meditation</p>
+            <h4>Spiritual Activities</h4>
+            <ul class="features-list">
+              <li>Yoga Classes</li>
+              <li>Meditation Sessions</li>
+              <li>Evening Aarti</li>
+              <li>Ashram Stays</li>
+              <li>Spiritual Discourses</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Year Round</span>
+              <span class="season-tag">Best: Feb-May</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/devprayag.jpg" alt="Devprayag"/>
+          <div class="card-content">
+            <h3>Devprayag</h3>
+            <p>Confluence of Alaknanda and Bhagirathi rivers</p>
+            <h4>Sacred Sites</h4>
+            <ul class="features-list">
+              <li>Raghunath Temple</li>
+              <li>Sangam Ghat</li>
+              <li>Meditation Points</li>
+              <li>Ancient Scriptures</li>
+              <li>Sacred Ceremonies</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Year Round</span>
+              <span class="season-tag">Best: Oct-Mar</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="yoga-meditation" style="margin-top:4rem;">
+      <h2>Yoga & Meditation Centers</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/parmarth.jpg" alt="Parmarth Niketan"/>
+          <div class="card-content">
+            <h3>Parmarth Niketan, Rishikesh</h3>
+            <p>Largest ashram in Rishikesh with yoga and meditation programs</p>
+            <h4>Offerings</h4>
+            <ul class="features-list">
+              <li>Yoga Teacher Training</li>
+              <li>Meditation Courses</li>
+              <li>Spiritual Retreats</li>
+              <li>Vedic Studies</li>
+              <li>Accommodation Available</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Year Round Programs</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/sivananda.jpg" alt="Sivananda Ashram"/>
+          <div class="card-content">
+            <h3>Sivananda Ashram</h3>
+            <p>Traditional yoga and vedanta teachings</p>
+            <h4>Programs</h4>
+            <ul class="features-list">
+              <li>Yoga Classes</li>
+              <li>Philosophy Classes</li>
+              <li>Sanskrit Studies</li>
+              <li>Meditation Sessions</li>
+              <li>Karma Yoga</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Year Round Programs</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/phool-chatti.jpg" alt="Phool Chatti"/>
+          <div class="card-content">
+            <h3>Phool Chatti Ashram</h3>
+            <p>Peaceful ashram offering authentic spiritual experience</p>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>7-Day Retreats</li>
+              <li>Meditation</li>
+              <li>Pranayama</li>
+              <li>Chanting</li>
+              <li>Nature Walks</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Scheduled Programs</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="festivals" style="margin-top:4rem;">
+      <h2>Spiritual Festivals & Events</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/kumbh-mela.jpg" alt="Kumbh Mela"/>
+          <div class="card-content">
+            <h3>Kumbh Mela</h3>
+            <p>World's largest spiritual gathering</p>
+            <ul class="features-list">
+              <li>Sacred Bathing</li>
+              <li>Sadhus & Saints</li>
+              <li>Religious Discourses</li>
+              <li>Cultural Programs</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Every 12 Years</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/nanda-devi-raj-jat.jpg" alt="Nanda Devi Raj Jat"/>
+          <div class="card-content">
+            <h3>Nanda Devi Raj Jat</h3>
+            <p>Sacred pilgrimage to honor Goddess Nanda</p>
+            <ul class="features-list">
+              <li>280km Pilgrimage</li>
+              <li>Traditional Rituals</li>
+              <li>Local Culture</li>
+              <li>Mountain Trek</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Every 12 Years</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="spiritual-card animate-slide-up">
+          <img src="assets/kanwar-yatra.jpg" alt="Kanwar Yatra"/>
+          <div class="card-content">
+            <h3>Kanwar Yatra</h3>
+            <p>Annual pilgrimage of Lord Shiva devotees</p>
+            <ul class="features-list">
+              <li>Sacred Water Collection</li>
+              <li>Mass Processions</li>
+              <li>Devotional Songs</li>
+              <li>Communal Harmony</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">July-August</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pilgrimage-guide" style="margin:4rem 0;padding:2rem;background:#fff3e0;border-radius:12px;">
+      <h2>Pilgrimage Planning Guide</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <div>
+          <h3>🙏 Before You Go</h3>
+          <ul>
+            <li>Check temple timings</li>
+            <li>Weather conditions</li>
+            <li>Required permits</li>
+            <li>Accommodation booking</li>
+          </ul>
+        </div>
+        <div>
+          <h3>📿 What to Bring</h3>
+          <ul>
+            <li>Comfortable clothing</li>
+            <li>Offerings materials</li>
+            <li>Basic medications</li>
+            <li>Weather protection</li>
+          </ul>
+        </div>
+        <div>
+          <h3>🕊️ Etiquette</h3>
+          <ul>
+            <li>Dress modestly</li>
+            <li>Remove footwear</li>
+            <li>Maintain silence</li>
+            <li>Follow local customs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" style="text-align:center;margin:4rem 0;padding:3rem;background:#fff3e0;border-radius:8px;">
+      <h2>Begin Your Spiritual Journey</h2>
+      <p style="margin:1.5rem 0;">
+        Experience divine peace and enlightenment in the sacred lands of Uttarakhand.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;">
+        <a href="contact.html" class="btn">Plan Your Pilgrimage</a>
+        <a href="tips.html" class="btn">Travel Guidelines</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uttarakhand Tourism</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

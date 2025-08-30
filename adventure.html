@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adventure & Activities | Uttarakhand Tourism</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .adventure-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .adventure-card:hover {
+      transform: translateY(-5px);
+    }
+    .adventure-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .difficulty-badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      margin: 0.3rem;
+    }
+    .easy { background: #e0f2e9; color: #2d6a4f; }
+    .moderate { background: #fff3c4; color: #8a6e00; }
+    .challenging { background: #ffe5e5; color: #c92a2a; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/logo.jpeg" alt="Logo"/> Uttarakhand Tourism</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="adventure.html" class="active">Adventure</a></li>
+        <li><a href="spiritual.html">Spiritual</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="position:relative;height:70vh;overflow:hidden;">
+    <img src="assets/adventure-hero.jpg" alt="Adventure in Uttarakhand" style="width:100%;height:100%;object-fit:cover;"/>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:2rem;">
+      <h1 style="font-size:3.5rem;margin-bottom:1rem;">Adventure Sports & Activities</h1>
+      <p style="font-size:1.25rem;max-width:800px;">Experience the thrill of the Himalayas through exciting adventures</p>
+    </div>
+  </section>
+
+  <main style="max-width:1200px;margin:0 auto;padding:2rem;">
+    <section class="adventure-category">
+      <h2>Trekking Adventures</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/roopkund-trek.jpg" alt="Roopkund Trek"/>
+          <div class="card-content">
+            <h3>Roopkund Trek</h3>
+            <span class="difficulty-badge challenging">Challenging</span>
+            <p>Famous mysterious lake trek at 16,000 ft with skeletal remains</p>
+            <h4>Trek Details</h4>
+            <ul>
+              <li>Duration: 7-8 days</li>
+              <li>Distance: 53 km</li>
+              <li>Max Altitude: 15,750 ft</li>
+              <li>Base: Lohajung</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>May-June, September-October</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/valley-trek.jpg" alt="Valley of Flowers Trek"/>
+          <div class="card-content">
+            <h3>Valley of Flowers Trek</h3>
+            <span class="difficulty-badge moderate">Moderate</span>
+            <p>UNESCO World Heritage site with endemic alpine flowers</p>
+            <h4>Trek Details</h4>
+            <ul>
+              <li>Duration: 6 days</li>
+              <li>Distance: 38 km</li>
+              <li>Max Altitude: 14,400 ft</li>
+              <li>Base: Govindghat</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>July-September (Peak flowering)</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/kedarkantha-trek.jpg" alt="Kedarkantha Trek"/>
+          <div class="card-content">
+            <h3>Kedarkantha Trek</h3>
+            <span class="difficulty-badge easy">Easy to Moderate</span>
+            <p>Popular winter trek with stunning Himalayan views</p>
+            <h4>Trek Details</h4>
+            <ul>
+              <li>Duration: 4-5 days</li>
+              <li>Distance: 20 km</li>
+              <li>Max Altitude: 12,500 ft</li>
+              <li>Base: Sankri</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>December-April (Snow Trek)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="adventure-category" style="margin-top:4rem;">
+      <h2>Water Sports</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/rafting-adventure.jpg" alt="River Rafting"/>
+          <div class="card-content">
+            <h3>River Rafting in Rishikesh</h3>
+            <span class="difficulty-badge moderate">Various Grades</span>
+            <p>World-class white water rafting on the Ganges</p>
+            <h4>Available Stretches</h4>
+            <ul>
+              <li>Marine Drive (Grade 2)</li>
+              <li>Shivpuri (Grade 3)</li>
+              <li>Kaudiyala (Grade 4)</li>
+              <li>Custom Expeditions</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>September-June</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/kayaking.jpg" alt="Kayaking"/>
+          <div class="card-content">
+            <h3>Kayaking</h3>
+            <span class="difficulty-badge challenging">Technical</span>
+            <p>Advanced water sport for experienced enthusiasts</p>
+            <h4>Popular Spots</h4>
+            <ul>
+              <li>Tehri Lake</li>
+              <li>Ganges Rapids</li>
+              <li>Training Programs</li>
+              <li>Safety Equipment</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>October-June</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/bodyboarding.jpg" alt="Body Boarding"/>
+          <div class="card-content">
+            <h3>Body Boarding</h3>
+            <span class="difficulty-badge easy">Beginner Friendly</span>
+            <p>Fun water activity for beginners</p>
+            <h4>Features</h4>
+            <ul>
+              <li>Basic Training</li>
+              <li>Safety Equipment</li>
+              <li>Guided Sessions</li>
+              <li>Photography</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>March-June, September-November</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="adventure-category" style="margin-top:4rem;">
+      <h2>Aerial Adventures</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/paragliding.jpg" alt="Paragliding"/>
+          <div class="card-content">
+            <h3>Paragliding</h3>
+            <span class="difficulty-badge moderate">Tandem Available</span>
+            <p>Soar above the mountains with experienced pilots</p>
+            <h4>Locations</h4>
+            <ul>
+              <li>Mukteshwar</li>
+              <li>Bhimtal</li>
+              <li>Pithoragarh</li>
+              <li>Training Courses</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>March-June, September-November</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/bungee.jpg" alt="Bungee Jumping"/>
+          <div class="card-content">
+            <h3>Bungee Jumping</h3>
+            <span class="difficulty-badge challenging">Thrilling</span>
+            <p>India's highest bungee jumping platform</p>
+            <h4>Features</h4>
+            <ul>
+              <li>83m Jump Height</li>
+              <li>Professional Equipment</li>
+              <li>Safety Briefing</li>
+              <li>Video Recording</li>
+            </ul>
+            <h4>Location</h4>
+            <p>Mohan Chatti, Rishikesh</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/zipline.jpg" alt="Zip Lining"/>
+          <div class="card-content">
+            <h3>Zip Lining</h3>
+            <span class="difficulty-badge easy">Family Friendly</span>
+            <p>Exciting aerial rides across valleys</p>
+            <h4>Locations</h4>
+            <ul>
+              <li>Rishikesh</li>
+              <li>Mussoorie</li>
+              <li>Dhanaulti</li>
+              <li>Safety Gear Provided</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>Year-round (weather permitting)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="adventure-category" style="margin-top:4rem;">
+      <h2>Winter Sports</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/skiing.jpg" alt="Skiing"/>
+          <div class="card-content">
+            <h3>Skiing in Auli</h3>
+            <span class="difficulty-badge moderate">All Levels</span>
+            <p>India's premier ski resort with world-class facilities</p>
+            <h4>Features</h4>
+            <ul>
+              <li>Professional Instructors</li>
+              <li>Equipment Rental</li>
+              <li>Ski Lift</li>
+              <li>Beginner Slopes</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>December-March</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/snowboarding.jpg" alt="Snowboarding"/>
+          <div class="card-content">
+            <h3>Snowboarding</h3>
+            <span class="difficulty-badge challenging">Technical</span>
+            <p>Exciting winter sport for thrill-seekers</p>
+            <h4>Available At</h4>
+            <ul>
+              <li>Auli Slopes</li>
+              <li>Equipment Rental</li>
+              <li>Training Available</li>
+              <li>Safety Gear</li>
+            </ul>
+            <h4>Season</h4>
+            <p>December-February</p>
+          </div>
+        </article>
+
+        <article class="adventure-card animate-slide-up">
+          <img src="assets/snow-hiking.jpg" alt="Snow Hiking"/>
+          <div class="card-content">
+            <h3>Snow Hiking</h3>
+            <span class="difficulty-badge easy">Beginner Friendly</span>
+            <p>Guided snow walks in winter wonderland</p>
+            <h4>Popular Trails</h4>
+            <ul>
+              <li>Chopta-Tungnath</li>
+              <li>Dayara Bugyal</li>
+              <li>Kuari Pass</li>
+              <li>Guide Included</li>
+            </ul>
+            <h4>Best Time</h4>
+            <p>December-February</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-guide" style="margin:4rem 0;padding:2rem;background:#f5f5f5;border-radius:12px;">
+      <h2>Adventure Booking Guide</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <div>
+          <h3>🎯 How to Book</h3>
+          <ul>
+            <li>Choose your activity</li>
+            <li>Select preferred dates</li>
+            <li>Check availability</li>
+            <li>Book through authorized operators</li>
+          </ul>
+        </div>
+        <div>
+          <h3>🎒 What to Pack</h3>
+          <ul>
+            <li>Appropriate clothing</li>
+            <li>Safety equipment</li>
+            <li>First aid essentials</li>
+            <li>Required documents</li>
+          </ul>
+        </div>
+        <div>
+          <h3>⚠️ Safety First</h3>
+          <ul>
+            <li>Follow guide instructions</li>
+            <li>Check weather conditions</li>
+            <li>Maintain fitness levels</li>
+            <li>Carry emergency contacts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" style="text-align:center;margin:4rem 0;padding:3rem;background:#f5f5f5;border-radius:8px;">
+      <h2>Ready for Adventure?</h2>
+      <p style="margin:1.5rem 0;">
+        Book your adventure activities with certified operators and experienced guides.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;">
+        <a href="contact.html" class="btn">Contact for Booking</a>
+        <a href="tips.html" class="btn">Safety Guidelines</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uttarakhand Tourism</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

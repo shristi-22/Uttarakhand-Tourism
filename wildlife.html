@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wildlife & Nature | Uttarakhand Tourism</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .wildlife-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .wildlife-card:hover {
+      transform: translateY(-5px);
+    }
+    .wildlife-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1.5rem;
+    }
+    .features-list {
+      list-style: none;
+      padding: 0;
+    }
+    .features-list li {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+    .features-list li::before {
+      content: "🌿";
+      position: absolute;
+      left: 0;
+    }
+    .season-tag {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.9rem;
+      margin: 0.3rem;
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/logo.jpeg" alt="Logo"/> Uttarakhand Tourism</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="adventure.html">Adventure</a></li>
+        <li><a href="spiritual.html">Spiritual</a></li>
+        <li><a href="wildlife.html" class="active">Wildlife</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="position:relative;height:70vh;overflow:hidden;">
+    <img src="assets/wildlife-hero.jpg" alt="Wildlife in Uttarakhand" style="width:100%;height:100%;object-fit:cover;"/>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:2rem;">
+      <h1 style="font-size:3.5rem;margin-bottom:1rem;">Wildlife & Nature</h1>
+      <p style="font-size:1.25rem;max-width:800px;">Discover the rich biodiversity of Uttarakhand's forests and mountains</p>
+    </div>
+  </section>
+
+  <main style="max-width:1200px;margin:0 auto;padding:2rem;">
+    <section class="national-parks">
+      <h2>National Parks</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/corbett-tiger.jpg" alt="Jim Corbett National Park"/>
+          <div class="card-content">
+            <h3>Jim Corbett National Park</h3>
+            <p>India's oldest national park, famous for Bengal tigers</p>
+            <h4>Wildlife Highlights</h4>
+            <ul class="features-list">
+              <li>Royal Bengal Tigers</li>
+              <li>Asian Elephants</li>
+              <li>Leopards</li>
+              <li>400+ Bird Species</li>
+              <li>Gharials & Crocodiles</li>
+            </ul>
+            <h4>Safari Options</h4>
+            <ul class="features-list">
+              <li>Jeep Safari</li>
+              <li>Elephant Safari</li>
+              <li>Canter Safari</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Nov-Jun</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/rajaji-elephants.jpg" alt="Rajaji National Park"/>
+          <div class="card-content">
+            <h3>Rajaji National Park</h3>
+            <p>Rich biodiversity near Haridwar and Rishikesh</p>
+            <h4>Wildlife Highlights</h4>
+            <ul class="features-list">
+              <li>Asian Elephants</li>
+              <li>Tigers</li>
+              <li>Leopards</li>
+              <li>Deer Species</li>
+              <li>315+ Bird Species</li>
+            </ul>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>Jeep Safari</li>
+              <li>Bird Watching</li>
+              <li>Nature Walks</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Nov-Jun</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/valley-flowers.jpg" alt="Valley of Flowers"/>
+          <div class="card-content">
+            <h3>Valley of Flowers National Park</h3>
+            <p>UNESCO World Heritage Site with unique flora</p>
+            <h4>Natural Highlights</h4>
+            <ul class="features-list">
+              <li>Endemic Alpine Flowers</li>
+              <li>Medicinal Plants</li>
+              <li>Himalayan Wildlife</li>
+              <li>Rare Butterflies</li>
+              <li>Mountain Streams</li>
+            </ul>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>Guided Walks</li>
+              <li>Photography</li>
+              <li>Botanical Study</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Jul-Sep</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wildlife-sanctuaries" style="margin-top:4rem;">
+      <h2>Wildlife Sanctuaries</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/binsar-sanctuary.jpg" alt="Binsar Wildlife Sanctuary"/>
+          <div class="card-content">
+            <h3>Binsar Wildlife Sanctuary</h3>
+            <p>Dense oak and rhododendron forests with rich birdlife</p>
+            <h4>Wildlife</h4>
+            <ul class="features-list">
+              <li>Himalayan Black Bear</li>
+              <li>Leopards</li>
+              <li>200+ Bird Species</li>
+              <li>Mountain Goats</li>
+            </ul>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>Nature Trails</li>
+              <li>Bird Watching</li>
+              <li>Photography</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Oct-Mar</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/kedarnath-sanctuary.jpg" alt="Kedarnath Wildlife Sanctuary"/>
+          <div class="card-content">
+            <h3>Kedarnath Wildlife Sanctuary</h3>
+            <p>High-altitude sanctuary with rare Himalayan species</p>
+            <h4>Wildlife</h4>
+            <ul class="features-list">
+              <li>Snow Leopard</li>
+              <li>Musk Deer</li>
+              <li>Himalayan Tahr</li>
+              <li>Brown Bear</li>
+            </ul>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>Trekking</li>
+              <li>Wildlife Spotting</li>
+              <li>Research</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Apr-Jun</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/nandadevi-sanctuary.jpg" alt="Nanda Devi Sanctuary"/>
+          <div class="card-content">
+            <h3>Nanda Devi Biosphere Reserve</h3>
+            <p>UNESCO World Heritage Site with unique ecosystem</p>
+            <h4>Highlights</h4>
+            <ul class="features-list">
+              <li>Snow Leopard</li>
+              <li>Himalayan Black Bear</li>
+              <li>Blue Sheep</li>
+              <li>Alpine Flora</li>
+            </ul>
+            <h4>Activities</h4>
+            <ul class="features-list">
+              <li>Research</li>
+              <li>Limited Tourism</li>
+              <li>Photography</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: May-Oct</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bird-watching" style="margin-top:4rem;">
+      <h2>Bird Watching Destinations</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/sattal-birds.jpg" alt="Sattal"/>
+          <div class="card-content">
+            <h3>Sattal</h3>
+            <p>Paradise for bird watchers with diverse species</p>
+            <h4>Bird Species</h4>
+            <ul class="features-list">
+              <li>Himalayan Woodpeckers</li>
+              <li>Kingfishers</li>
+              <li>Thrushes</li>
+              <li>Warblers</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Oct-Mar</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/assan-barrage.jpg" alt="Assan Barrage"/>
+          <div class="card-content">
+            <h3>Assan Barrage</h3>
+            <p>Important wetland for migratory birds</p>
+            <h4>Bird Species</h4>
+            <ul class="features-list">
+              <li>Brahminy Duck</li>
+              <li>Bar-headed Geese</li>
+              <li>Cormorants</li>
+              <li>Mallards</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Dec-Feb</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wildlife-card animate-slide-up">
+          <img src="assets/jhilmil-tal.jpg" alt="Jhilmil Tal"/>
+          <div class="card-content">
+            <h3>Jhilmil Jheel Conservation Reserve</h3>
+            <p>Swamp deer habitat and bird watching site</p>
+            <h4>Wildlife</h4>
+            <ul class="features-list">
+              <li>Swamp Deer</li>
+              <li>Waterfowl</li>
+              <li>Raptors</li>
+              <li>Wetland Birds</li>
+            </ul>
+            <div style="margin-top:1rem;">
+              <span class="season-tag">Best Time: Oct-Mar</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="photography-guide" style="margin:4rem 0;padding:2rem;background:#e8f5e9;border-radius:12px;">
+      <h2>Wildlife Photography Guide</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2rem;">
+        <div>
+          <h3>📸 Equipment Tips</h3>
+          <ul>
+            <li>Telephoto lens (300mm+)</li>
+            <li>Sturdy tripod</li>
+            <li>Weather protection</li>
+            <li>Extra batteries</li>
+          </ul>
+        </div>
+        <div>
+          <h3>📝 Best Practices</h3>
+          <ul>
+            <li>Follow park rules</li>
+            <li>Maintain distance</li>
+            <li>No flash photography</li>
+            <li>Stay in vehicles</li>
+          </ul>
+        </div>
+        <div>
+          <h3>🌅 Timing</h3>
+          <ul>
+            <li>Early morning</li>
+            <li>Late afternoon</li>
+            <li>After light rain</li>
+            <li>Waterhole timing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="conservation" style="margin-top:4rem;">
+      <h2>Conservation Efforts</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;">
+        <div class="wildlife-card">
+          <img src="assets/conservation.jpg" alt="Conservation"/>
+          <div class="card-content">
+            <h3>Project Tiger</h3>
+            <p>Successful tiger conservation program in Corbett National Park</p>
+            <ul class="features-list">
+              <li>Tiger Population Growth</li>
+              <li>Habitat Protection</li>
+              <li>Anti-poaching Measures</li>
+              <li>Community Involvement</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wildlife-card">
+          <img src="assets/community.jpg" alt="Community"/>
+          <div class="card-content">
+            <h3>Community Conservation</h3>
+            <p>Local initiatives for wildlife protection</p>
+            <ul class="features-list">
+              <li>Forest Protection</li>
+              <li>Sustainable Tourism</li>
+              <li>Education Programs</li>
+              <li>Wildlife Corridors</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" style="text-align:center;margin:4rem 0;padding:3rem;background:#e8f5e9;border-radius:8px;">
+      <h2>Plan Your Wildlife Adventure</h2>
+      <p style="margin:1.5rem 0;">
+        Experience the incredible biodiversity of Uttarakhand's wilderness.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;">
+        <a href="contact.html" class="btn">Book Safari</a>
+        <a href="tips.html" class="btn">Safari Guidelines</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uttarakhand Tourism</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

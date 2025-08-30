@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Uttarakhand Tourism</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .contact-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .office-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+    .office-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .office-content {
+      padding: 1.5rem;
+    }
+    .contact-info {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-info li {
+      margin: 1rem 0;
+      padding-left: 2rem;
+      position: relative;
+    }
+    .contact-info li::before {
+      position: absolute;
+      left: 0;
+    }
+    .phone::before {
+      content: "📞";
+    }
+    .email::before {
+      content: "✉️";
+    }
+    .address::before {
+      content: "📍";
+    }
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f0f0f0;
+      border-radius: 50%;
+      transition: background 0.3s;
+    }
+    .social-links a:hover {
+      background: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo"><img src="assets/logo.jpeg" alt="Logo"/> Uttarakhand Tourism</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="adventure.html">Adventure</a></li>
+        <li><a href="spiritual.html">Spiritual</a></li>
+        <li><a href="wildlife.html">Wildlife</a></li>
+        <li><a href="tips.html">Travel Tips</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section" style="position:relative;height:60vh;overflow:hidden;">
+    <img src="assets/contact-hero.jpg" alt="Contact Us" style="width:100%;height:100%;object-fit:cover;"/>
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:2rem;">
+      <h1 style="font-size:3.5rem;margin-bottom:1rem;">Contact Us</h1>
+      <p style="font-size:1.25rem;max-width:800px;">Get in touch with us for your travel queries and bookings</p>
+    </div>
+  </section>
+
+  <main style="max-width:1200px;margin:0 auto;padding:2rem;">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:4rem;">
+      <section class="contact-form animate-slide-up">
+        <h2>Send us a Message</h2>
+        <form id="contactForm" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required/>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required/>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"/>
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry">Type of Inquiry*</label>
+            <select id="inquiry" name="inquiry" required>
+              <option value="">Select an option</option>
+              <option value="general">General Inquiry</option>
+              <option value="booking">Travel Booking</option>
+              <option value="package">Tour Package</option>
+              <option value="complaint">Complaint</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message*</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn" style="width:100%;">Send Message</button>
+        </form>
+      </section>
+
+      <section class="contact-info-section">
+        <h2>Our Offices</h2>
+        <div style="display:grid;gap:2rem;">
+          <div class="office-card animate-slide-up">
+            <img src="assets/dehradun-office.jpg" alt="Dehradun Office"/>
+            <div class="office-content">
+              <h3>Head Office - Dehradun</h3>
+              <ul class="contact-info">
+                <li class="address">123 Rajpur Road, Dehradun, Uttarakhand - 248001</li>
+                <li class="phone">+91-135-2746817</li>
+                <li class="email">info@uttarakhandtourism.gov.in</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="office-card animate-slide-up">
+            <img src="assets/nainital-office.jpg" alt="Nainital Office"/>
+            <div class="office-content">
+              <h3>Regional Office - Nainital</h3>
+              <ul class="contact-info">
+                <li class="address">45 Mall Road, Nainital, Uttarakhand - 263001</li>
+                <li class="phone">+91-5942-236356</li>
+                <li class="email">nainital@uttarakhandtourism.gov.in</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="faq-section" style="margin:4rem 0;">
+      <h2>Frequently Asked Questions</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem;">
+        <div class="contact-form">
+          <h3>Bookings & Reservations</h3>
+          <div class="faq-item">
+            <h4>How can I book a tour package?</h4>
+            <p>You can book through our website, email, or by calling our office directly. We recommend booking at least 2-3 months in advance during peak season.</p>
+          </div>
+          <div class="faq-item">
+            <h4>What payment methods do you accept?</h4>
+            <p>We accept all major credit/debit cards, net banking, and UPI payments. International travelers can pay through secure payment gateways.</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Travel Support</h3>
+          <div class="faq-item">
+            <h4>Do you provide airport transfers?</h4>
+            <p>Yes, we provide airport transfers from Dehradun and Pantnagar airports. This service needs to be booked in advance.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Can you help with custom itineraries?</h4>
+            <p>Yes, our travel experts can help you create a customized itinerary based on your preferences and duration of stay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section" style="margin:4rem 0;">
+      <h2>Find Us</h2>
+      <div style="margin-top:2rem;border-radius:12px;overflow:hidden;height:400px;">
+        <!-- Replace src with actual Google Maps embed code -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.9315037375584!2d78.03261491544439!3d30.316494981778287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c356c888af%3A0x4c3562c032518799!2sUttarakhand%20Tourism%20Development%20Board!5e0!3m2!1sen!2sin!4v1628756432986!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="emergency-contact" style="margin:4rem 0;padding:2rem;background:#ffe0e0;border-radius:12px;text-align:center;">
+      <h2>24/7 Emergency Support</h2>
+      <p style="margin:1rem 0;">For immediate assistance, call our toll-free number:</p>
+      <h3 style="font-size:2rem;color:#d32f2f;">1800-123-4567</h3>
+      <p>Available 24 hours a day, 7 days a week</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uttarakhand Tourism</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Form validation and submission handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Add your form submission logic here
+      alert('Thank you for your message. We will get back to you soon!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
